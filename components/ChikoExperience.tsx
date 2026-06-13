@@ -132,20 +132,6 @@ export default function ChikoExperience({
         <section className="glass-card bloom-border rounded-[32px] p-5 shadow-card">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <BrandLogo />
-            <div className="flex flex-wrap items-center gap-2 self-start sm:justify-end">
-              <Link
-                href="/favorites"
-                className="glass-card bloom-border flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold text-chiko-berry transition hover:scale-[1.03]"
-              >
-                {favorites.length > 0 ? `Избр. ${favorites.length}` : "Избр."}
-              </Link>
-              <Link
-                href="/info"
-                className="glass-card bloom-border flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold text-chiko-mocha transition hover:scale-[1.03]"
-              >
-                Инфо
-              </Link>
-            </div>
           </div>
 
           <div className="mt-5 grid grid-cols-3 gap-3">
