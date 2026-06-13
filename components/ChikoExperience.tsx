@@ -403,14 +403,14 @@ export default function ChikoExperience({
               <h2 className="mt-1 text-2xl font-black">Нормальная продакшн-сборка</h2>
               <p className="mt-3 text-sm leading-6 text-chiko-mocha/80">
                 Реальные страницы вместо псевдо-роутинга, зависимости не тянутся в git, а
-                устанавливаются на сервере или внутри docker build по `package-lock.json`.
+                устанавливаются локально или в Vercel-среде по `package-lock.json`.
               </p>
 
               <div className="mt-5 grid grid-cols-2 gap-3">
                 <InfoTile title="Git" value="node_modules ignored" />
-                <InfoTile title="Сервер" value="npm ci / docker build" />
+                <InfoTile title="Сервер" value="npm ci / vercel build" />
                 <InfoTile title="Маршруты" value="/ /menu /favorites /info" />
-                <InfoTile title="Запуск" value="docker compose up -d --build" />
+                <InfoTile title="Запуск" value="npm run deploy:vercel" />
               </div>
             </section>
 

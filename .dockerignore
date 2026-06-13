@@ -1,8 +1,0 @@
-node_modules
-.next
-.git
-.vercel
-.DS_Store
-npm-debug.log*
-coverage
-.figma

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Chiko",
   },
   description:
-    "Визуально выверенное PWA-приложение для Chiko: iOS-style блоки, интерактивное меню, избранное и готовность к Docker/Vercel.",
+    "Визуально выверенное PWA-приложение для Chiko: iOS-style блоки, интерактивное меню, избранное и готовность к деплою на Vercel.",
   applicationName: "Chiko",
   manifest: "/manifest.webmanifest",
   icons: {

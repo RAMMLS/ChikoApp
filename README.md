@@ -6,7 +6,7 @@
 - Next.js 15
 - TypeScript
 - Tailwind CSS
-- Docker / Docker Compose
+- Vercel CLI deployment
 
 ## Запуск локально
 
@@ -15,15 +15,35 @@ npm install
 npm run dev
 ```
 
-## Запуск в одну команду
+## Деплой на Vercel
 
 ```bash
-docker compose up -d --build
+npm run deploy:vercel
 ```
 
-После запуска приложение доступно на `http://localhost:3000`.
+Для production-деплоя:
 
-## Деплой
+```bash
+npm run deploy:vercel:prod
+```
 
-- Vercel: проект собирается стандартной командой `npm run build`
-- Docker: используется production-сборка через standalone output
+Что делает скрипт:
+
+- при отсутствии `node_modules` выполняет `npm ci`
+- проверяет production-сборку через `npm run build`
+- запускает `npx vercel@latest`
+- при первом запуске попросит выполнить `login` и `link`
+
+Локальный production preview при необходимости:
+
+```bash
+npm run build
+npm run start
+```
+
+Можно вызвать скрипт напрямую:
+
+```bash
+./deploy-vercel.sh preview
+./deploy-vercel.sh prod
+```

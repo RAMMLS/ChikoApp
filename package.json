@@ -6,7 +6,9 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
-    "lint": "eslint . --ext .js,.ts,.tsx"
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "deploy:vercel": "bash ./deploy-vercel.sh preview",
+    "deploy:vercel:prod": "bash ./deploy-vercel.sh prod"
   },
   "dependencies": {
     "next": "^15",

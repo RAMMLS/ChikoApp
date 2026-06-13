@@ -29,3 +29,6 @@ pnpm-debug.log*
 # generated
 coverage
 dist
+
+# local conversation dumps
+output.md
