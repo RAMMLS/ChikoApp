@@ -159,39 +159,6 @@ export default function ChikoExperience({
             ))}
           </div>
 
-          <div className="mt-5 rounded-[28px] border border-chiko-line bg-white/80 p-4 shadow-soft">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.24em] text-chiko-berry/70">
-                  Актуальный фокус
-                </div>
-                <h1 className="mt-2 text-2xl font-black leading-tight">
-                  Аккуратное меню Chiko без декоративного мусора
-                </h1>
-                <p className="mt-2 text-sm leading-6 text-chiko-mocha/80">
-                  Реальные маршруты, чистые секции, понятные карточки и нормальная продакшн-структура.
-                </p>
-              </div>
-              <span className="rounded-full bg-chiko-blush px-3 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-chiko-berry">
-                Production
-              </span>
-            </div>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              <Link
-                href="/menu"
-                className="rounded-full bg-chiko-berry px-4 py-3 text-sm font-bold text-white transition hover:translate-y-[-1px]"
-              >
-                Перейти в меню
-              </Link>
-              <a
-                href="tel:+79000000000"
-                className="rounded-full border border-chiko-line px-4 py-3 text-sm font-semibold text-chiko-mocha transition hover:bg-chiko-blush"
-              >
-                Позвонить
-              </a>
-            </div>
-          </div>
         </section>
 
         <section className="mt-6">
