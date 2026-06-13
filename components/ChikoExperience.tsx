@@ -130,9 +130,9 @@ export default function ChikoExperience({
     <div className="bg-chiko-bloom">
       <main className="mx-auto min-h-screen max-w-md px-4 pb-36 pt-6 text-chiko-ink">
         <section className="glass-card bloom-border rounded-[32px] p-5 shadow-card">
-          <div className="flex items-start justify-between gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <BrandLogo />
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2 self-start sm:justify-end">
               <Link
                 href="/favorites"
                 className="glass-card bloom-border flex h-11 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold text-chiko-berry transition hover:scale-[1.03]"
