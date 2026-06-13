@@ -19,6 +19,11 @@ fi
 echo "Проверяю production-сборку..."
 npm run build
 
+if [ "${VERCEL:-}" = "1" ] || [ -n "${VERCEL_URL:-}" ]; then
+  echo "Обнаружена среда Vercel: локальный вызов Vercel CLI пропускается."
+  exit 0
+fi
+
 VERCEL_ARGS=()
 
 case "$MODE" in

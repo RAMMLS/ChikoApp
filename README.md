@@ -33,6 +33,7 @@ npm run deploy:vercel:prod
 - проверяет production-сборку через `npm run build`
 - запускает `npx vercel@latest`
 - при первом запуске попросит выполнить `login` и `link`
+- если скрипт случайно запускается внутри самой среды Vercel, он не вызывает `vercel` повторно
 
 Локальный production preview при необходимости:
 
@@ -47,3 +48,10 @@ npm run start
 ./deploy-vercel.sh preview
 ./deploy-vercel.sh prod
 ```
+
+## Настройки Vercel
+
+- `Build Command`: `npm run build`
+- `Install Command`: `npm ci`
+- если в проекте Vercel сейчас указан `chmod +x deploy-vercel.sh && ./deploy-vercel.sh`, это нужно убрать
+- в репозитории уже добавлен `vercel.json`, который фиксирует корректный build-сценарий
